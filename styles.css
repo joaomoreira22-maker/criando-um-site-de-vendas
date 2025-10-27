@@ -1,7 +1,7 @@
-/* Paleta de Cores (Exemplo de inspiração Shopee) */
+/* Paleta de Cores (Inspiração Shopee) */
 :root {
     --primary-color: #ee4d2d; /* Laranja/Vermelho principal */
-    --secondary-color: #f8f8f8; /* Fundo claro */
+    --secondary-color: #f8f8f8; /* Fundo claro da página */
     --text-color: #333;
     --light-text-color: #757575;
     --border-color: #eee;
@@ -32,7 +32,7 @@ body {
     color: white;
 }
 
-.header .container {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,6 +68,7 @@ body {
     cursor: pointer;
     color: var(--primary-color);
     font-size: 16px;
+    transition: background-color 0.2s;
 }
 
 .header-icons button {
@@ -77,9 +78,6 @@ body {
     font-size: 1.2em;
     cursor: pointer;
     margin-left: 15px;
-}
-
-.cart-btn {
     position: relative;
 }
 
@@ -103,12 +101,13 @@ body {
 .categories .container {
     display: flex;
     padding: 10px 0;
+    justify-content: space-around;
 }
 
 .categories a {
     text-decoration: none;
     color: var(--light-text-color);
-    padding: 0 15px;
+    padding: 5px 15px;
     font-size: 0.9em;
     transition: color 0.2s;
 }
@@ -124,7 +123,7 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
     margin-top: 20px;
 }
@@ -134,10 +133,9 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 3px;
     overflow: hidden;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
-    padding: 10px;
-    position: relative;
+    padding-bottom: 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
@@ -148,28 +146,122 @@ body {
 
 .product-image {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     margin-bottom: 10px;
 }
 
+.product-info {
+    padding: 0 10px;
+}
+
 .product-name {
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 0.9em;
+    font-weight: 400;
     margin-bottom: 5px;
     color: var(--text-color);
     display: block;
-    height: 2.4em; /* Limita a duas linhas */
+    height: 2.5em; /* Limita a 2 linhas */
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .product-price {
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .add-to-cart-btn {
-    background-color:
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    width: 90%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d13d1d; 
+}
+
+/* === Sidebar do Carrinho === */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Escondido inicialmente */
+    width: 350px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.cart-sidebar.open {
+    right: 0; /* Exibir */
+}
+
+.cart-sidebar h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #eee;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+.cart-total {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.cart-total p {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.checkout-btn {
+    background-color: #28a745; /* Verde para checkout */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.close-cart-btn {
+    background: var(--light-text-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* === Rodapé (Footer) === */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}

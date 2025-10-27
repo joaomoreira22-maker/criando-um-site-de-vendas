@@ -1,31 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja de Roupas - Inspirada na Shopee</title>
+    <title>Minha Loja de Roupas - Shopee Inspired</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo">MinhaLoja</div>
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Buscar produtos...">
-            <button id="searchButton"><i class="fas fa-search"></i></button>
-        </div>
-        <div class="icons">
-            <i class="fas fa-shopping-cart" id="cartIcon"></i>
-            <i class="fas fa-user"></i>
+        <div class="container header-content">
+            <div class="logo">Minha Loja</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar por roupas e acessórios...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-icons">
+                <button class="cart-btn"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</button>
+                <button><i class="fas fa-user"></i></button>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <h1>Ofertas do Dia!</h1>
-        
-        <section class="product-grid" id="productGrid">
-            </section>
+    <nav class="categories">
+        <div class="container">
+            <a href="#">Novidades</a>
+            <a href="#">Vestidos</a>
+            <a href="#">Camisetas</a>
+            <a href="#">Calças</a>
+            <a href="#">Acessórios</a>
+        </div>
+    </nav>
+
+    <main class="main-content container">
+        <h1>Produtos em Destaque</h1>
+        <div class="product-grid" id="product-list">
+            </div>
+
+        <div class="cart-sidebar" id="cart-sidebar">
+            <h2><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
+            <div id="cart-items">
+                </div>
+            <div class="cart-total">
+                <p>Total: R$ <span id="cart-total">0,00</span></p>
+                <button class="checkout-btn">Finalizar Compra (Simulação)</button>
+                <button class="close-cart-btn">Continuar Comprando</button>
+            </div>
+        </div>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Minha Loja de Roupas. Inspiração Shopee.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

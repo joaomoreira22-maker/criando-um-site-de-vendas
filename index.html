@@ -3,56 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja de Roupas - Shopee Inspired</title>
+    <title>Minha Loja de Roupas Premium | ShopStyle</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-content">
-            <div class="logo">Minha Loja</div>
+            <div class="logo">SHOPSTYLE</div>
+            
             <div class="search-bar">
-                <input type="text" placeholder="Pesquisar por roupas e acessórios...">
+                <input type="text" placeholder="Buscar por categoria, marca ou produto...">
                 <button><i class="fas fa-search"></i></button>
             </div>
+            
             <div class="header-icons">
-                <button class="cart-btn"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</button>
-                <button><i class="fas fa-user"></i></button>
+                <button title="Ajuda"><i class="far fa-question-circle"></i></button>
+                <button title="Conta"><i class="fas fa-user"></i></button>
+                <button class="cart-btn" title="Carrinho">
+                    <i class="fas fa-shopping-bag"></i> 
+                    <span id="cart-count" class="cart-badge">0</span>
+                </button>
             </div>
         </div>
     </header>
 
     <nav class="categories">
         <div class="container">
-            <a href="#">Novidades</a>
-            <a href="#">Vestidos</a>
-            <a href="#">Camisetas</a>
-            <a href="#">Calças</a>
-            <a href="#">Acessórios</a>
+            <a href="#" class="active">Destaques</a>
+            <a href="#">Feminino</a>
+            <a href="#">Masculino</a>
+            <a href="#">Kids</a>
+            <a href="#">Outlet</a>
         </div>
     </nav>
 
     <main class="main-content container">
-        <h1>Produtos em Destaque</h1>
-        <div class="product-grid" id="product-list">
+        <section class="hero-banner">
+            <img src="https://via.placeholder.com/1200x300?text=Nova+Coleção+Primavera-Verão" alt="Banner Promocional" class="banner-image">
+            <div class="banner-text">
+                <h2>NOVOS LANÇAMENTOS</h2>
+                <p>Estilo e elegância com até 30% OFF.</p>
+                <button class="shop-now-btn">Compre Agora</button>
             </div>
+        </section>
+
+        <h2 class="section-title">Nossa Seleção Especial</h2>
+        
+        <section class="product-grid" id="product-list">
+            </section>
 
         <div class="cart-sidebar" id="cart-sidebar">
-            <h2><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
-            <div id="cart-items">
+            <div class="cart-header">
+                <h2>Sua Sacola</h2>
+                <button class="close-cart-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="cart-items" class="cart-items-list">
                 </div>
-            <div class="cart-total">
-                <p>Total: R$ <span id="cart-total">0,00</span></p>
-                <button class="checkout-btn">Finalizar Compra (Simulação)</button>
-                <button class="close-cart-btn">Continuar Comprando</button>
+            <div class="cart-summary">
+                <div class="summary-line">
+                    <span>Subtotal:</span>
+                    <span class="summary-price">R$ <span id="cart-total">0,00</span></span>
+                </div>
+                <button class="checkout-btn">Finalizar Pedido</button>
             </div>
         </div>
+        <div class="cart-overlay" id="cart-overlay"></div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Minha Loja de Roupas. Inspiração Shopee.</p>
+        <div class="container footer-grid">
+            <div>
+                <h4>SHOPSTYLE</h4>
+                <p>Qualidade e tendências em um só lugar.</p>
+            </div>
+            <div>
+                <h4>Ajuda</h4>
+                <a href="#">Fale Conosco</a>
+                <a href="#">Trocas e Devoluções</a>
+            </div>
+            <div>
+                <h4>Institucional</h4>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ShopStyle E-commerce. Todos os direitos reservados.</p>
         </div>
     </footer>
 

@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja de Roupas Premium | ShopStyle</title>
+    <title>Shopee Futebol Clone</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header-content">
-            <div class="logo">SHOPSTYLE</div>
-            
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar por categoria, marca ou produto...">
+
+    <header class="cabecalho">
+        <div class="container">
+            <h1><i class="fas fa-futbol"></i> **Shopee Futebol**</h1>
+            <div class="barra-busca">
+                <input type="text" id="campo-busca" placeholder="Buscar camisas, chuteiras, bolas...">
                 <button><i class="fas fa-search"></i></button>
             </div>
-            
-            <div class="header-icons">
-                <button title="Ajuda"><i class="far fa-question-circle"></i></button>
-                <button title="Conta"><i class="fas fa-user"></i></button>
-                <button class="cart-btn" title="Carrinho">
-                    <i class="fas fa-shopping-bag"></i> 
-                    <span id="cart-count" class="cart-badge">0</span>
-                </button>
+            <div class="icones-usuario">
+                <a href="#"><i class="fas fa-shopping-cart"></i> Carrinho (<span id="contador-carrinho">0</span>)</a>
+                <a href="#"><i class="fas fa-user"></i> Entrar</a>
             </div>
         </div>
     </header>
 
-    <nav class="categories">
+    <main class="principal">
         <div class="container">
-            <a href="#" class="active">Destaques</a>
-            <a href="#">Feminino</a>
-            <a href="#">Masculino</a>
-            <a href="#">Kids</a>
-            <a href="#">Outlet</a>
+            <aside class="categorias">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#">Camisas Oficiais</a></li>
+                    <li><a href="#">Chuteiras</a></li>
+                    <li><a href="#">Bolas</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                </ul>
+            </aside>
+            
+            <section class="lista-produtos">
+                <h2>🔥 Produtos em Destaque</h2>
+                <div id="produtos-container" class="grid-produtos">
+                    </div>
+            </section>
         </div>
-    </nav>
+    </main>
 
-    <main class="main-content container">
-        
-        <section class="hero-banner">
-            <img src="
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2025 Shopee Futebol Clone. Projeto de estudo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

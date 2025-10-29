@@ -1,11 +1,11 @@
 // 1. Dados Fictícios de Produtos
 const produtos = [
-    { id: 1, nome: "Camisa Brasil Edição Especial", preco: 249.90, imagem: "https://via.placeholder.com/150/FF4D00/FFFFFF?text=Camisa+Brasil", categoria: "camisas" },
-    { id: 2, nome: "Chuteira Speed Pro Laranja", preco: 399.90, imagem: "https://via.placeholder.com/150/FF4D00/FFFFFF?text=Chuteira+Laranja", categoria: "chuteiras" },
-    { id: 3, nome: "Bola Oficial Premier League", preco: 159.00, imagem: "https://via.placeholder.com/150/FF4D00/FFFFFF?text=Bola+Premier", categoria: "bolas" },
-    { id: 4, nome: "Meião Profissional Branco (3 pares)", preco: 45.50, imagem: "https://via.placeholder.com/150/FF4D00/FFFFFF?text=Meiao", categoria: "acessorios" },
-    { id: 5, nome: "Camisa Liverpool Home 24/25", preco: 229.90, imagem: "https://via.placeholder.com/150/FF4D00/FFFFFF?text=Camisa+LVP", categoria: "camisas" },
-    { id: 6, nome: "Luva Goleiro Top Grip", preco: 189.90, imagem: "https://via.placeholder.com/150/FF4D00/FFFFFF?text=Luva+Goleiro", categoria: "acessorios" },
+    { id: 1, nome: "Camisa Brasil Edição Especial", preco: 249.90, imagem: "https://alcavie.com/storage/images/288/products/brasnike02539/kMmDJ7gEtap2gaizEnNy2VWYMxvAnZWMoWMFwvrE.jpg", categoria: "camisas" },
+    { id: 2, nome: "Chuteira Speed Pro Laranja", preco: 399.90, imagem: "https://http2.mlstatic.com/D_NQ_NP_701950-MLB71547874353_092023-O-chuteira-society-umbro-pro-5-bump-club-laranja-original.webp
+    { id: 3, nome: "Bola Oficial Premier League", preco: 159.00, imagem: "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/07/bola-premier-league-nova-2024-2025-e1721672258239.webp?w=1024
+    { id: 4, nome: "Meião Profissional Branco (3 pares)", preco: 45.50, imagem: "https://images.tcdn.com.br/img/img_prod/1258191/kit_3_meias_cano_medio_atoalhado_39_44_branco_mizuno_357_1_3a53658795d8bd0860ea5db6e653567a.jpeg
+    { id: 5, nome: "Camisa Liverpool Home 24/25", preco: 229.90, imagem: "https://acdn-us.mitiendanube.com/stores/001/409/577/products/camisa-pre-match-liverpool-fc-treino-24-25-nike-azul-masculina-torcedor-authentic-oficial-futebol-premier-league-inglaterra-reds-champions-league-salah-4-8f36e2dbf2a0324c5017267625205319-640-0.jpg
+    { id: 6, nome: "Luva Goleiro Top Grip", preco: 189.90, imagem: "https://http2.mlstatic.com/D_NQ_NP_891864-MLB92442288931_092025-O-luva-de-goleiro-poker-profissional-futebol-original-grip-top.webp
 ];
 
 // Array para simular o carrinho de compras
